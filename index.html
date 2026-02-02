@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faucet — Drip Quotes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="screen">
+    <header class="header">
+      <h1 class="title">DRIP</h1>
+    </header>
+
+    <main class="main">
+      <section class="faucet-section" aria-label="Faucet dripping water">
+        <div class="faucet-wrap" id="faucet">
+          <div class="faucet">
+            <div class="faucet-base"></div>
+            <div class="faucet-spout"></div>
+            <div class="drip-zone" id="drip-zone" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-section" aria-label="Rotating quotes">
+        <blockquote class="quote-box">
+          <p class="quote-text" id="quote-text"></p>
+          <cite class="quote-cite" id="quote-cite"></cite>
+        </blockquote>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="pixel-label">— pixel faucet —</span>
+    </footer>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
